@@ -1,4 +1,4 @@
-name: docker build for main branch
+name: docker build for release
 
 on:
   release:

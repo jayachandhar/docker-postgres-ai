@@ -28,7 +28,7 @@ LABEL authors="jayachandhar"
 RUN apt update && apt install -y python3 python3-pip postgresql-plpython3-16 git
 
 # Install pgai extension
-RUN git clone https://github.com/timescale/pgai.git && \
+RUN git clone --branch v0.3.0 https://github.com/timescale/pgai.git && \
     cd pgai && \
     make install && \
     cd .. && \
